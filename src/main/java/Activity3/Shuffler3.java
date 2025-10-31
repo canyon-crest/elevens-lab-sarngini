@@ -1,4 +1,6 @@
 package Activity3;
+import java.util.ArrayList;
+
 /**
  * This class provides a convenient way to test shuffling methods.
  */
@@ -52,6 +54,25 @@ public class Shuffler3 {
 	 */
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		int[] shuffled = new int[values.length];
+		int mid = (values.length+1)/2;
+		
+		int pos1 = 0;
+		int i = 0;
+		for(; i<mid; i++) {
+			shuffled[pos1] = values[i];
+			pos1 +=2;
+		}
+		pos1 = 1;
+		
+		for(; i < values.length; i++) {
+			shuffled[pos1] = values[i];
+			pos1 += 2;
+		}
+		
+		for(int j=0; j<values.length; j++) {
+			values[j] = shuffled[j];
+		}
 		
 		
 	}
@@ -69,5 +90,21 @@ public class Shuffler3 {
 	 */
 	public static void selectionShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		for(int k = values.length - 1; k>0; k--) {
+			int val = (int)(Math.random() * (k+1));
+			int temp = values[val];
+			values[val] = values[k];
+			values[k] = temp;
+		}
+	}
+	
+	public String flip() {
+		int val = (int)(Math.random()*3);
+		if(val == 0 || val == 1) {
+			return "heads";
+		}
+		else {
+			return "tails";
+		}
 	}
 }
