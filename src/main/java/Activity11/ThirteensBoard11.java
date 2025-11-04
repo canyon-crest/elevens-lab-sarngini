@@ -140,6 +140,7 @@ public class ThirteensBoard11 extends Board11 {
 	 */
 	private boolean playKingIfPossible() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 11 *** */
+		
 		return false; // REPLACE !
 	}
 }

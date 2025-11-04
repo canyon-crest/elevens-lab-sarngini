@@ -1,5 +1,6 @@
 package Activity3;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * This class provides a convenient way to test shuffling methods.
@@ -106,5 +107,18 @@ public class Shuffler3 {
 		else {
 			return "tails";
 		}
+	}
+	
+	
+	public boolean arePermutations(int[] arr1, int[] arr2) {
+		if(arr1.length != arr2.length) {
+			return false;
+		}
+		
+		Arrays.sort(arr1);
+		Arrays.sort(arr2);
+		
+		return Arrays.equals(arr1, arr2);
+		
 	}
 }

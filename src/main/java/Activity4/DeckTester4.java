@@ -53,5 +53,15 @@ public class DeckTester4 {
 		System.out.println();
 
 		/* *** TO BE COMPLETED IN ACTIVITY 4 *** */
+		
+		String[] ranks2 = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"};
+		String[] suits2 = {"spades", "hearts", "diamonds", "clubs"};
+		int[] vals2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+		Deck4 d2 = new Deck4(ranks2, suits2, vals2);
+		
+		System.out.println("testing shuffle method");
+		System.out.println("deal:" + d2);
+		d2.shuffle();
+		System.out.println(d2);
 	}
 }

@@ -127,6 +127,13 @@ public abstract class Board11 {
 		return selected;
 	}
 
+	public void printBoard() {
+		for(int i = 0; i < cards.length; i++) {
+			System.out.print(cards[i].rank() + ", ");
+			
+		}
+		System.out.println("");
+	}
 	/**
 	 * Generates and returns a string representation of this board.
 	 * @return the string version of this board.
