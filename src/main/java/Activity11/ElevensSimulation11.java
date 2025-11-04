@@ -8,7 +8,7 @@ public class ElevensSimulation11 {
 	/**
 	 * The number of games of Elevens to play.
 	 */
-	private static final int GAMES_TO_PLAY = 10;
+	private static final int GAMES_TO_PLAY = 1;
 
 	/**
 	 * Flag used to control debugging print statements.
